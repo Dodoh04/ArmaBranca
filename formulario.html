@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilo.css">
+<style>
+* {
+	box-sizing: border-box;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	background-color: white;
+	border-radius: 4px;
+	resize: vertical;
+}
+input[type=text]:focus {
+	background-color: lightgreen;
+}
+label{
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type=submit] {
+	font-size: 1.3em;
+	background-color: #4caf50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+.container {
+	border-radius: 5px;
+	background-color: #555;
+	color: #fff;
+	padding: 20px;
+}
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+/* Limpa floats depois das colunas */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 800px){
+	.menu3{
+		height: 200px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+	.menu3{
+		height: 230px;
+	}
+}
+
+li{
+	display: inline-block;
+}
+
+
+</style>
+
+</head>
+<body class="container">
+	<nav class="menu3">
+        <h1>ARMAS BRANCAS</h1>
+
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li><a href="chinesas.html">Chinesas</a></li>
+            <li><a href="a_r.html">Romanas</a></li>
+            <li><a href="a_j.html">Japonesas</a></li>
+			<li ><a href="galeria.html">Galeria</a></li>
+			<li ><a href="formulario.html">Formulário</a></li>
+		  </ul>
+	</nav>
+	
+<h2>Formulário Responsivo</h2>
+
+<div class="container">
+<form action="" method="GET">
+
+	<div class="row">
+		<div class="col-25">
+			<label for="pnome">Nome</label>
+		</div>
+
+		<div class="col-75">
+			<input type="text" name="fname" id="pnome" placeholder="Seu nome...">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="snome">Sobrenome</label>
+		</div>
+
+		<div class="col-75">
+			<input type="text" name="lname" id="snome" placeholder="Seu Sobrenome...">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="estado">Curtiu o site?</label>
+		</div>
+
+		<div class="col-75">
+	<select id="estado" name="estado">
+		<option value="G">Gostei Muito</option>
+		<option value="GM">Gostei</option>
+		<option value="AN">Achei normal</option>
+		<option valeu="Mv">Ficou ruim e minha vó faria melhor</option>
+		
+	</select>
+	</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="Coment">Comentários</label>
+		</div>
+		<div class="col-75">
+			<textarea id="Coment" name="Coment" placeholder="Deixe seu comentário aqui..." style="height: 200px;"></textarea>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div class="row">
+	<input type="submit" value="Enviar">
+	</div>
+
+</form>
+</div>
+<footer>
+	<p>Douglas Medeiros de Oliveira</p>
+	<p>Guilherme Gomes de Souza</p>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--<ul>
+			<li class="d-inline"><a href="index.html">Home</a></li>
+			<li class="d-inline"><a href="chinesas.html">Chinesas</a></li>
+            <li class="d-inline"><a href="a_r.html">Romanas</a></li>
+            <li  class="dropdown">
+                <a href="a_j.html">Japonesas</a>
+                <div class="dropdown-content" style="">
+                    <a href="#kama" target="_self">Kama</a>
+                    <a href="#shuriken" target="_self">Shuriken</a>
+                    <a href="#katana" target="_self">Katana</a>
+				</div>
+            </li>
+			<li class="d-inline"><a href="galeria.html">Galeria</a></li>
+			<li class="d-inline"><a href="formulario.html">Formulário</a></li>
+		  </ul>-->
